@@ -3000,7 +3000,7 @@ button {
 .funnel-graph {
   position: absolute;
   top: -30px;
-  right: 60px;
+  right: 90px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -3011,40 +3011,40 @@ button {
 }
 .funnel-graph-img {
   position: absolute;
-  top: -1350px;
+  top: -1330px;
   left: 140px;
-  transform: scale(0.15);
-  z-index: 2;
+  transform: scale(0.16);
+  z-index: 1;
 }
 .funnel-figure__blue {
   box-sizing: content-box;
   height: 0;
-  width: 240px;
+  width: 196px;
   border-top: 120px solid #3c85f8;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
+  border-left: 28px solid transparent;
+  border-right: 28px solid transparent;
 }
 .funnel-figure__green {
   box-sizing: content-box;
   height: 0;
-  width: 160px;
+  width: 140px;
   border-top: 120px solid #18bd62;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
+  border-left: 28px solid transparent;
+  border-right: 28px solid transparent;
 }
 .funnel-figure__yellow {
   box-sizing: content-box;
   height: 0;
-  width: 80px;
+  width: 84px;
   border-top: 122px solid #fdbf30;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
+  border-left: 28px solid transparent;
+  border-right: 28px solid transparent;
 }
 .funnel-figure__red {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 120px 40px 0 40px;
+  border-width: 185px 42px 0 42px;
   border-color: #bc1915 transparent transparent transparent;
 }
 .custom {

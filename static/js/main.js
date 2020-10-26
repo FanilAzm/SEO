@@ -26,7 +26,7 @@ $(document).ready(function(){
     parallax: true,
     onLeave: function(origin, destination, direction){
       console.log("Leaving section" + origin.index);
-      if (origin.index === 1) {
+      if (origin.index === 1 && direction == 'down') {
         $('.funnel-graph').css({
           'opacity': '0'
         });
