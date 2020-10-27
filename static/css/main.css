@@ -3467,33 +3467,7 @@ button {
   color: #fff;
   opacity: 1;
 }
-@media screen and (max-width: 1440px) {
-  .custom {
-    background-position: 150% 0%;
-  }
-  .testing {
-    background-position: 150% 0%;
-  }
-  .conversion {
-    background-position: 110% 0%;
-  }
-  .selling {
-    background-position: 72% 0%;
-  }
-}
 @media screen and (max-width: 1200px) {
-  .custom {
-    background-position: 200% 0%;
-  }
-  .testing {
-    background-position: 200% 0%;
-  }
-  .conversion {
-    background-position: 120% 0%;
-  }
-  .selling {
-    background-position: 80% 0%;
-  }
   .custom .s-block__content,
   .conversion .s-block__content {
     margin-top: 35px;
@@ -3547,17 +3521,33 @@ button {
   .funnel-item__wrap .funnel-item__title:after {
     background-image: none;
   }
+  .funnel-graph-img {
+    display: none;
+  }
   .s-block__title {
     text-align: center;
+  }
+  .custom {
+    background-image: url("../../static/img/content/custom-bg.png");
+    background-position: 200% 0%;
   }
   .custom .s-block__title {
     text-align: left;
   }
+  .testing {
+    background-position: 200% 0%;
+  }
   .testing .s-block__title {
     text-align: left;
   }
+  .conversion {
+    background-position: 120% 0%;
+  }
   .conversion .s-block__title {
     text-align: left;
+  }
+  .selling {
+    background-position: 80% 0%;
   }
   .install .s-block__subtitle {
     text-align: center;
@@ -3572,39 +3562,6 @@ button {
 @media screen and (max-width: 1024px) {
   .advertising-tooltips {
     transform: translateX(-50px);
-  }
-  .custom {
-    background-position: 300% 0%;
-  }
-  .testing {
-    background-position: 300% 0%;
-  }
-  .conversion {
-    background-position: 150% 0%;
-  }
-  .selling {
-    background-position: 76% 0%;
-  }
-}
-@media screen and (max-width: 992px) {
-  .advertising-content br {
-    display: block;
-  }
-  .advertising-text {
-    margin: 30px 0;
-  }
-  .advertising-tooltips {
-    transform: translateX(-90px);
-  }
-  .mw-wrapper {
-    display: none;
-  }
-  .funnel-content {
-    padding-left: 0;
-    border: none;
-  }
-  .funnel-graph {
-    right: 20px;
   }
   .s-block__item {
     -ms-flex-preferred-size: 45%;
@@ -3632,14 +3589,14 @@ button {
   }
   .custom {
     background-size: cover;
-    background-position: left;
+    background-position: right top;
   }
   .custom .btn {
     box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
   }
   .testing {
     background-size: cover;
-    background-position: left;
+    background-position: right top;
   }
   .testing .btn {
     box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
@@ -3648,10 +3605,31 @@ button {
     color: #fff;
   }
   .conversion {
-    background-position: 75% 0%;
+    background-position: 80% 0%;
   }
   .conversion .s-block__title span {
     color: #fff;
+  }
+}
+@media screen and (max-width: 992px) {
+  .advertising-content br {
+    display: block;
+  }
+  .advertising-text {
+    margin: 30px 0;
+  }
+  .advertising-tooltips {
+    transform: translateX(-90px);
+  }
+  .mw-wrapper {
+    display: none;
+  }
+  .funnel-content {
+    padding-left: 0;
+    border: none;
+  }
+  .funnel-graph {
+    right: 20px;
   }
   .big-text {
     font-size: 180px;
@@ -3671,6 +3649,9 @@ button {
   }
 }
 @media screen and (max-width: 900px) {
+  .advertising-tooltips {
+    padding-right: 20px;
+  }
   .selling {
     background-position: 70% 0%;
   }
@@ -3698,6 +3679,12 @@ button {
 @media screen and (max-width: 768px) {
   .s-block__title {
     font-size: 38px;
+  }
+  .custom {
+    background-position: left top;
+  }
+  .testing {
+    background-position: left top;
   }
   .conversion {
     overflow: hidden;
@@ -3790,21 +3777,20 @@ button {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 425px) {
-  html {
-    font-size: 15px;
-  }
-  .advertising-title {
-    font-size: 52px;
-  }
-  .advertising-content {
-    font-size: 20px;
+@media screen and (max-width: 657px) {
+  .advertising .container {
+    width: 100%;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .advertising-tooltips {
     display: none;
   }
-  .funnel-item {
-    width: 350px;
+}
+@media screen and (max-width: 600px) {
+  .conversion {
+    background-size: cover;
+    background-position: left;
   }
   .s-block__item {
     -ms-flex-preferred-size: 100%;
@@ -3817,22 +3803,8 @@ button {
         flex-basis: 100%;
     max-width: 100%;
   }
-  .conversion {
-    background-size: cover;
-    background-position: left;
-  }
-  .selling {
-    background-position: 70% 0;
-  }
-  .selling-content {
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-  }
-  .selling-image:before {
-    left: -200px;
-  }
-  .selling-image:after {
-    right: -200px;
+  .funnel-item {
+    width: 450px;
   }
   .install-content {
     -ms-flex-direction: column;
@@ -3858,6 +3830,61 @@ button {
         align-self: center;
     -ms-flex-pack: center;
         justify-content: center;
+  }
+  .price-table tr td:first-child span {
+    margin-left: 5px;
+  }
+  .price-table td:before {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .funnel-item {
+    width: 350px;
+  }
+  .price-table td:before {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 15px;
+  }
+  .advertising-title {
+    font-size: 52px;
+  }
+  .advertising-content {
+    font-size: 20px;
+  }
+  .advertising-tooltips {
+    display: none;
+  }
+  .s-block__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+  .custom .s-block__item,
+  .conversion .s-block__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+  .selling {
+    background-position: 70% 0;
+  }
+  .selling-content {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .selling-image:before {
+    left: -200px;
+  }
+  .selling-image:after {
+    right: -200px;
+  }
+  .price-table td:before {
+    width: 60%;
   }
   .cases-content {
     -ms-flex-direction: column;
@@ -3900,8 +3927,15 @@ button {
   .selling-image:before {
     left: -300px;
   }
+  .selling-image:after {
+    right: -160px;
+  }
   .price-table td:before {
-    width: 60%;
-    margin-right: 10px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .selling-image:after {
+    right: -130px;
   }
 }
