@@ -3688,6 +3688,8 @@ button {
   }
   .conversion {
     overflow: hidden;
+    background-size: cover;
+    background-position: left;
   }
   .selling {
     background-position: 50% 0%;
@@ -3788,10 +3790,6 @@ button {
   }
 }
 @media screen and (max-width: 600px) {
-  .conversion {
-    background-size: cover;
-    background-position: left;
-  }
   .s-block__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;

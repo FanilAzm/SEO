@@ -130,12 +130,8 @@ $(document).ready(function(){
         stylePosition(5, 'up', '.selling', '72', '-500');
       }
       if (document.documentElement.clientWidth <= 1250) {
-        stylePosition(4, 'down', '.selling', '80', '0');
-        stylePosition(5, 'up', '.selling', '80', '-500');
-      }
-      if (document.documentElement.clientWidth <= 1150) {
-        stylePosition(4, 'down', '.selling', '80', '0');
-        stylePosition(5, 'up', '.selling', '80', '0');
+        stylePosition(4, 'down', '.selling', '75', '0');
+        stylePosition(5, 'up', '.selling', '75', '-500');
       }
       if (document.documentElement.clientWidth <= 900) {
         stylePosition(4, 'down', '.selling', '70', '0');
