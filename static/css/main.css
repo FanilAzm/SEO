@@ -2998,6 +2998,7 @@ button {
   background-size: cover;
 }
 .funnel-graph {
+  display: none;
   position: absolute;
   top: -30px;
   right: 90px;
@@ -3007,6 +3008,7 @@ button {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+  transition: all 0.4s ease;
   z-index: 3;
 }
 .funnel-graph-img {
@@ -3014,6 +3016,7 @@ button {
   top: -1330px;
   left: 140px;
   transform: scale(0.16);
+  opacity: 0;
   z-index: 1;
 }
 .funnel-figure__blue {
@@ -3023,6 +3026,7 @@ button {
   border-top: 120px solid #3c85f8;
   border-left: 28px solid transparent;
   border-right: 28px solid transparent;
+  transition: all 0.3s ease;
 }
 .funnel-figure__green {
   box-sizing: content-box;
@@ -3031,6 +3035,7 @@ button {
   border-top: 120px solid #18bd62;
   border-left: 28px solid transparent;
   border-right: 28px solid transparent;
+  transition: all 0.3s ease;
 }
 .funnel-figure__yellow {
   box-sizing: content-box;
@@ -3039,6 +3044,7 @@ button {
   border-top: 122px solid #fdbf30;
   border-left: 28px solid transparent;
   border-right: 28px solid transparent;
+  transition: all 0.3s ease;
 }
 .funnel-figure__red {
   width: 0;
@@ -3046,6 +3052,7 @@ button {
   border-style: solid;
   border-width: 185px 42px 0 42px;
   border-color: #bc1915 transparent transparent transparent;
+  transition: all 0.3s ease;
 }
 .custom {
   position: relative;
@@ -3628,6 +3635,12 @@ button {
     padding-left: 0;
     border: none;
   }
+  .funnel-content:before {
+    display: none;
+  }
+  .funnel-content:after {
+    display: none;
+  }
   .funnel-graph {
     right: 20px;
   }
@@ -3876,7 +3889,7 @@ button {
         justify-content: flex-start;
   }
   .selling-image:before {
-    left: -200px;
+    left: -300px;
   }
   .selling-image:after {
     right: -200px;
@@ -3917,13 +3930,10 @@ button {
   .install .s-block__item-list {
     margin-top: 25px;
   }
-  .selling-image:before {
-    left: -250px;
-  }
 }
 @media screen and (max-width: 375px) {
   .selling-image:before {
-    left: -300px;
+    left: -240px;
   }
   .selling-image:after {
     right: -160px;
@@ -3933,6 +3943,9 @@ button {
   }
 }
 @media screen and (max-width: 350px) {
+  .selling-image:before {
+    left: -280px;
+  }
   .selling-image:after {
     right: -130px;
   }
