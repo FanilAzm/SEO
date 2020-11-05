@@ -5,7 +5,7 @@ $(document).ready(function(){
   
   
 
-  $(".mouse-icon").click(function(){
+  $(".mw-wrapper").click(function(){
 		$("html, body").animate({
 			scrollTop : $(".funnel").offset().top
 		}, 900);
@@ -27,16 +27,16 @@ $(document).ready(function(){
   }
 
   $('.funnel-item__wrap').each(function(index, item) {
-    if (index === 0) {
+    if (index === 0 && document.documentElement.clientWidth > 900) {
       animateGraph(item, '.funnel-figure__blue');
     }
-    if (index === 1) {
+    if (index === 1 && document.documentElement.clientWidth > 900) {
       animateGraph(item, '.funnel-figure__green');
     }
-    if (index === 2) {
+    if (index === 2 && document.documentElement.clientWidth > 900) {
       animateGraph(item, '.funnel-figure__yellow');
     }
-    if (index === 3) {
+    if (index === 3 && document.documentElement.clientWidth > 900) {
       animateGraph(item, '.funnel-figure__red');
     }
   });
@@ -99,7 +99,7 @@ $(document).ready(function(){
       
       // testing
       stylePosition(2, 'down', '.testing', '110', '0');
-      stylePosition(3, 'up', '.testing', '110', '-1000');
+      stylePosition(3, 'up', '.testing', '180', '1000');
 
       if (document.documentElement.clientWidth <= 1400) {
         stylePosition(2, 'down', '.testing', '150', '0');
@@ -120,7 +120,7 @@ $(document).ready(function(){
       
       // conversion
       stylePosition(3, 'down', '.conversion', '92', '0');
-      stylePosition(4, 'up', '.conversion', '92', '-1000');
+      stylePosition(4, 'up', '.conversion', '120', '1000');
 
       if (document.documentElement.clientWidth <= 1400) {
         stylePosition(3, 'down', '.conversion', '110', '0');
@@ -145,7 +145,7 @@ $(document).ready(function(){
 
       // selling
       stylePosition(4, 'down', '.selling', '65', '0');
-      stylePosition(5, 'up', '.selling', '65', '-500');
+      stylePosition(5, 'up', '.selling', '100', '1000');
 
       if (document.documentElement.clientWidth <= 1400) {
         stylePosition(4, 'down', '.selling', '72', '0');
@@ -159,7 +159,11 @@ $(document).ready(function(){
         stylePosition(4, 'down', '.selling', '80', '0');
         stylePosition(5, 'up', '.selling', '80', '0');
       }
-      if (document.documentElement.clientWidth <= 900) {
+      if (document.documentElement.clientWidth <= 992) {
+        stylePosition(4, 'down', '.selling', '75', '0');
+        stylePosition(5, 'up', '.selling', '75', '0');
+      }
+      if (document.documentElement.clientWidth <= 992) {
         stylePosition(4, 'down', '.selling', '70', '0');
         stylePosition(5, 'up', '.selling', '70', '0');
       }
@@ -189,6 +193,44 @@ $(document).ready(function(){
       }
     },
     scrollingSpeed: 900,
+  });
+
+  const typed = new Typed(".js-text-animation", {
+    strings: ["Настроим", "Проведем", "Оптимизируем ставки"],
+    typeSpeed: 60,
+    loop: true,
+    backSpeed: 25,
+    backDelay: 1500
+  });
+  
+  const typed2 = new Typed(".js-text-animation2", {
+    strings: ["3 сегмента ЦА", "6 недель", "77 заявок"],
+    typeSpeed: 60,
+    loop: true,
+    backSpeed: 25,
+    backDelay: 1500
+  });
+
+  const typed3 = new Typed(".js-text-animation3", {
+    strings: ["45 подмен", "91 рубль - Средняя стоимость заявки"],
+    typeSpeed: 60,
+    loop: true,
+    backSpeed: 25,
+    backDelay: 1500
+  });
+
+  const typed4 = new Typed(".js-text-animation4", {
+    strings: ["С 31 рубля до 11 снизили цену клика", "100% загрузка отдела продаж"],
+    typeSpeed: 60,
+    loop: true,
+    backSpeed: 25,
+    backDelay: 1500
+  });
+
+  // initialization of aos
+  AOS.init({
+    duration: 650,
+    once: true
   });
 
 });
